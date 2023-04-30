@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drinks show page</title>
 </head>
 <body>
-    <h1>Hello</h1>
+    <h1>AT FOO BAR</h1>
+
+    <h2>
+        <%= drink.name ;%>
+    </h2>
+<img src="<%= drink.image + '.jpg'%>" alt="">
+<h3>
+    The price is : $<%= drink.price %> 
+</h3>
+<p>
+<a href="/drinks">Back to Index Page</a>
+</p>
 </body>
 </html>

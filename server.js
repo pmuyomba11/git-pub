@@ -14,8 +14,10 @@ app.get('/drinks/',(req,res) => {
 //show route created
 app.get('/drinks/:id', (req,res) => {
     res.render('drinks_show.ejs', {
-        drink: drinks[req.params.id]
+        drink: drinks[req.params.id],
+
     })
+
 })
 
 
