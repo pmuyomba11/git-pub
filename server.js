@@ -6,7 +6,9 @@ const drinks = require('./models/drinks.js')
 
 //index route created
 app.get('/drinks/',(req,res) => {
-    res.render('drinks_index.ejs')
+    res.render('drinks_index.ejs',{
+        allDrinks : drinks,
+    })
 })
 
 //show route created

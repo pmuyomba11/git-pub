@@ -7,10 +7,35 @@
             background-color: rgb(9, 10, 11);
             color: blanchedalmond;
         }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0; 
+            color: #fff; 
+            font-size: 1.5rem;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+
+        
+
+        li:hover :visited{
+            color: #fff;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
    <h1>Welcome to GitPub</h1> 
+   <p>
+    <ul>
+        <% for(let i = 0; i<allDrinks.length; i++){%>
+            <li>
+               <a href="/drinks/<%=i%>"><%=allDrinks[i].name%></a>
+            </li>
+
+       <% } %>
+    </ul>
+   </p>
 
 </body>
 </html>
