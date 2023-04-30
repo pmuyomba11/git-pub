@@ -4,10 +4,18 @@ const app = express();
 const port = process.env.PORT || 3000;
 const drinks = require('./models/drinks.js')
 
-
+//index route created
 app.get('/drinks/',(req,res) => {
     res.render('drinks_index.ejs')
 })
+
+//show route created
+app.get('/drinks/:id', (req,res) => {
+    res.render('drinks_show.ejs', {
+        drink: drinks[req.params.id]
+    })
+})
+
 
 
 
